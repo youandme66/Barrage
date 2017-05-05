@@ -1,0 +1,25 @@
+.frame {
+    width: 500px;
+    height: 100px;
+    background-color: gainsboro;
+}
+
+.text {
+    color: #3a3939;
+}
+
+.text-background.wraper {
+    background-color: rgba(233, 151, 124, 0.5);
+    position: absolute;
+    top: 22px;
+    left: 5px;
+}
+
+.font-label {
+    font-weight: bold;
+    float: left;
+}
+.danmaku {
+    position: absolute;
+    left: 300px;
+}

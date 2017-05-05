@@ -1,0 +1,90 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <title class="">计算机协会</title>
+    <link rel="stylesheet" href="../public/libs/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../public/css/index.css">
+    <link rel="stylesheet" href="../public/css/danmu.css">
+    </head>
+    <body style="margin-top:35px; ">
+      <div class="barrage">
+            <div class="screen">
+                <a href="#" class="s_close">X</a>
+                <div class="mask">
+                    <!--内容在这里显示-->
+                </div>
+            </div>
+<div class="system-wraper" id="system-wraper">
+        <h3><span class="label label-danger">ICchat</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button id="change" class="btn navbar-btn btn-primary btn-default" data-toggle="modal" data-target="#myMood">加入计算机协会</button></h3>
+        <div id="system" style="color:green;font-size:20;font-family:  ;">
+        </div>
+</div>
+<div id="login_block" class="input-group">
+      <span class="input-group-addon" style="width:100px">名字</span>
+      <input id="login_name" name="login_name" placeholder="" type="text" class="form-control"/>
+      <div class="input-group-btn">
+        <button id="login_button" class="btn btn-success" style="width:100px">登录</button>       
+      </div>
+    </div>
+      <br/>
+
+            <!--Send End-->
+        </div>
+        <div id="send_block" class="input-group" style="position: fixed;top:0px;z-index:4;">
+      <span class="input-group-addon" style="width:100px">文字</span>
+      <input id="message" name="message" placeholder="" type="text" class="form-control"/>
+      <div class="input-group-btn">
+        <button id="send_button" class="btn btn-success" style="width:100px">发送</button>       
+      </div>
+    </div>
+      <div class="modal fade" id="myMood" tabindex="-1">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" data-dismiss="modal" type="button"><span>&times;</span></button>
+            <h2 style="text-align: center;color: green;">加入计算机协会</h2>
+          </div>
+          <div class="modal-body">
+            <div class="input-group">
+              <span class="input-group-addon">名&nbsp;&nbsp;&nbsp;&nbsp;字</span>
+              <input class="form-control" type="text" name="name" id="name" value="" placeholder="请输入名字"/>
+            </div>
+            <br />
+            <div class="input-group">
+              <span class="input-group-addon">年&nbsp;&nbsp;&nbsp;&nbsp;龄</span>
+              <input class="form-control" type="text" name="age" id="age" value="" placeholder="请输入年龄"/>
+            </div>
+            <br />
+            <div class="input-group">
+              <span class="input-group-addon">手机号</span>
+              <input class="form-control" type="text" name="phone" id="phone" value="" placeholder="请输入手机号"/>
+            </div>
+            <br />
+            <div class="input-group">
+              <span class="input-group-addon">QQ&nbsp;号</span>
+              <input class="form-control" type="text" name="QQ" id="QQ" value="" placeholder="请输入QQ号"/>
+            </div>
+            <br/>
+            <div class="input-group">
+              <span class="input-group-addon">班&nbsp;&nbsp;&nbsp;&nbsp;级</span>
+              <input class="form-control" type="text" name="classes" id="classes" value="" placeholder="请输入班级"/>
+            </div>
+            <br/>
+            <div class="input-group">
+              <span class="input-group-addon">简&nbsp;&nbsp;&nbsp;&nbsp;介</span>
+              <input class="form-control" type="text" name="information" id="information" value="" placeholder="简单介绍自己"/>
+            </div>
+          </div>
+            <div class="modal-footer">
+              <button class="btn btn-success btn-block" id="commit" data-toggle="modal" data-target="#myMood">递交简历</button>
+            </div>        
+        </div>
+      </div>
+    </div>
+      <script src="../public/libs/jquery/dist/jquery.min.js"></script>
+      <script src="../public/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+      <script src="../public/libs/socket.io.js"></script>
+      <script src="../public/javascripts/index.js"></script>
+    </body>
+</html>
